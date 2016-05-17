@@ -8,7 +8,6 @@
 
 #import "MediaBrixInterstitialCustomEvent.h"
 #import "MediaBrix.h"
-#import "MPInstanceProvider.h"
 
 @interface MediaBrixInterstitialCustomEvent()
 
@@ -32,7 +31,7 @@ NSString * zone  = @"";
 
 -(void)showInterstitialFromRootViewController:(UIViewController *)rootViewController
 {
-    
+    [self.delegate interstitialCustomEventWillAppear:self];
     [[MediaBrix sharedInstance]showAdWithIdentifier:zone fromViewController:rootViewController reloadWhenFinish:NO];
 }
 
@@ -43,7 +42,7 @@ NSString * zone  = @"";
     NSString * adIdentifier =[notification.userInfo objectForKey:kMediabrixTargetAdTypeKey];
     
     if([kMediaBrixAdWillLoadNotification isEqualToString:notification.name]){
-        [self.delegate interstitialCustomEventWillAppear:self];
+
     }
     else if([kMediaBrixAdFailedNotification isEqualToString:notification.name]){
         [self.delegate interstitialCustomEvent:self didFailToLoadAdWithError:nil];
@@ -52,17 +51,17 @@ NSString * zone  = @"";
         [self.delegate interstitialCustomEvent:self didLoadAd:self];
     }
     else if([kMediaBrixAdShowNotification isEqualToString:notification.name]){
+        
          [self.delegate interstitialCustomEventDidAppear:self];
     }
+    else if([ kMediaBrixAdClickedNotification isEqualToString:notification.name]){
+        [self.delegate interstitialCustomEventDidReceiveTapEvent:self];
+    }
     else if([kMediaBrixAdDidCloseNotification isEqualToString:notification.name]){
-        
         [self.delegate interstitialCustomEventWillDisappear:self];
         [self.delegate interstitialCustomEventDidDisappear:self];
-        
     }
     else if([ kMediaBrixAdRewardNotification isEqualToString:notification.name]){
-        
-        /* invoked when ad view is completed and reward can be given */
         
     }
     
