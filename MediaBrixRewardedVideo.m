@@ -11,7 +11,10 @@
 
 
 
-@interface MediaBrixRewardedVideo()
+@interface MediaBrixRewardedVideo(){
+    NSString * appID;
+    NSString * zone;
+}
 
 @property(strong,nonatomic) NSMutableDictionary * publisherVars;
 
@@ -19,13 +22,13 @@
 
 @implementation MediaBrixRewardedVideo
 
-NSString * appID = @"";
-NSString * zone  = @"";
-
 BOOL _adReady;
 
 - (void)requestRewardedVideoWithCustomEventInfo:(NSDictionary *)info
 {
+    appID = @"";
+    zone  = @"";
+    
     id callbackDelegate = self;
     _adReady = NO;
     [MediaBrix initMediaBrixAdHandler:callbackDelegate withBaseURL:@"http://mobile.mediabrix.com/v2/manifest" withAppID:appID];

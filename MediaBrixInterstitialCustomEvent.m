@@ -9,7 +9,10 @@
 #import "MediaBrixInterstitialCustomEvent.h"
 #import "MediaBrix.h"
 
-@interface MediaBrixInterstitialCustomEvent()
+@interface MediaBrixInterstitialCustomEvent(){
+    NSString * appID;
+    NSString * zone;
+}
 
 @property(strong,nonatomic) NSMutableDictionary * publisherVars;
 
@@ -17,12 +20,14 @@
 
 @implementation MediaBrixInterstitialCustomEvent
 
-NSString * appID = @"";
-NSString * zone  = @"";
+
 
 
 - (void)requestInterstitialWithCustomEventInfo:(NSDictionary *)info
 {
+    appID = @"";
+    zone  = @"";
+    
     id callbackDelegate = self;
     [MediaBrix initMediaBrixAdHandler:callbackDelegate withBaseURL:@"http://mobile.mediabrix.com/v2/manifest" withAppID:appID];
     [[MediaBrix sharedInstance]loadAdWithIdentifier:zone adData:self.publisherVars withViewController:callbackDelegate];
