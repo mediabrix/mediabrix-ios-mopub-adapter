@@ -59,3 +59,6 @@ MediaBrix has created a MoPub adapter that allows publishers, using MoPub as the
 **Step 14:** Within Ad Unit Targeting, select the fullscreen ad units where you added the Custom Event Class in Step 7
 
 **Step 15:** Add other desired targeting and Save Order
+
+##Logging 
+To disable logging from the MediaBrix SDK, set ```MBEnableVerboseLogging``` to ```NO``` in "MediaBrixInterstitialCustomEvent.m" or "MediaBrixRewardedVideo.m" 
