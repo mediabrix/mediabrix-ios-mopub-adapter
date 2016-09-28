@@ -44,7 +44,7 @@
         }
         _adReady = NO;
         callbackDelegate = self;
-        MediaBrix MBEnableVerboseLogging:YES];
+        [MediaBrix MBEnableVerboseLogging:YES];
         [MediaBrix initMediaBrixDelegate:callbackDelegate withBaseURL:@"http://mobile.mediabrix.com/v2/manifest" withAppID:appID];
         
     }else{
