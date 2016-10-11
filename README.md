@@ -32,7 +32,7 @@ MediaBrix has created a MoPub adapter that allows publishers, using MoPub as the
 ![Step 6](https://cdn.mediabrix.com/o38%2Fdevsupportportal%2FMoPub%20Adapter%20Images%2F2016_03_07_16_44_344.png)
 
 **Step 7:** Find your app, and add **"MediaBrixInterstitialCustomEvent"** or **"MediaBrixRewardedVideo"** into **"Custom Event Class"** field for fullscreen ads. And in **Custom Event Class Data** copy the following:
-```{"app":"APP_ID","zone":"ZONE_NAME"}```. Replace "APP_ID" and "ZONE_NAME" with values provided by MediaBrix.
+```{"appID":"APP_ID","zone":"ZONE_NAME"}```. Replace "APP_ID" and "ZONE_NAME" with values provided by MediaBrix.
 
 
 
@@ -52,7 +52,7 @@ MediaBrix has created a MoPub adapter that allows publishers, using MoPub as the
 
 **Step 12:** Within the Class section enter: "MediaBrixInterstitialCustomEvent" or "MediaBrixRewardedVideo" 
 
-**Step 13** Within the Data section enter:  ``{"app":"APP_ID","zone":"ZONE_NAME"}``. Replace "APP_ID" and "ZONE_NAME" with values provided by MediaBrix.
+**Step 13** Within the Data section enter:  ``{"appID":"APP_ID","zone":"ZONE_NAME"}``. Replace "APP_ID" and "ZONE_NAME" with values provided by MediaBrix.
 
 ![Steps 11-13](https://hcs.hwcdn.net/v1/AUTH_mediabrix-231a/content/o38%2Fdevsupportportal%2FMoPub%20Adapter%20Images%2F2016_04_01_13_38_062.png)
 
