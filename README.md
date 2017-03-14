@@ -32,7 +32,7 @@ MediaBrix has created a MoPub adapter that allows publishers, using MoPub as the
 
 ![Step 6](https://cdn.mediabrix.com/o38%2Fdevsupportportal%2FMoPub%20Adapter%20Images%2F2016_03_07_16_44_344.png)
 
-**Step 7:** Find your app, and add **"MediaBrixInterstitialCustomEvent"** or **"MediaBrixRewardedVideo"** into **"Custom Event Class"** field for fullscreen ads. And in **Custom Event Class Data** copy the following:
+**Step 7:** Find your app, and add **"MediaBrixInterstitialCustomEvent"** or **"MediaBrixRewardedVideo"** into **"Custom Event Class"** field for fullscreen ads/rewarded video ad. And in **Custom Event Class Data** copy the following:
 `{"appID":"APP_ID","zone":"ZONE_NAME"}`. Replace `APP_ID` and `ZONE_NAME` with values provided by MediaBrix.
 
 ![Step 7](https://cdn.mediabrix.com/o38%2Fdevsupportportal%2FMoPub%20Adapter%20Images%2F2016_04_01_13_14_401.png)
@@ -55,7 +55,7 @@ MediaBrix has created a MoPub adapter that allows publishers, using MoPub as the
 
 ![Steps 11-13](https://hcs.hwcdn.net/v1/AUTH_mediabrix-231a/content/o38%2Fdevsupportportal%2FMoPub%20Adapter%20Images%2F2016_04_01_13_38_062.png)
 
-**Step 14:** Within Ad Unit Targeting, select the fullscreen ad units where you added the Custom Event Class in Step 7
+**Step 14:** Within Ad Unit Targeting, select the fullscreen ad/rewarded video ad units where you added the Custom Event Class in Step 7
 
 **Step 15:** Add other desired targeting and Save Order
 
