@@ -16,7 +16,7 @@ MediaBrix has created a MoPub adapter that allows publishers, using MoPub as the
  * libMediaBrix.a
 * In "Link Binary with Libraries" press the "+" button to add libxml2.tbd
 
-**Step 2:** Copy "MediaBrixInterstitialCustomEvent.h" and "MediaBrixInterstitialCustomEvent.m" or "MediaBrixRewardedVideo.h" and "MediaBrixRewardedVideo.m" into your project src folder
+**Step 2:** Copy all the Objective-C classes from this repo into your project src folder
 
 **Step 3:** Login into your MoPub account
 
