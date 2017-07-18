@@ -53,7 +53,7 @@ static dispatch_once_t onceToken;
 }
 
 -(void) loadMediaBrixAd:(NSString *)zone{
-    [[MediaBrix sharedInstance] loadAdWithIdentifier:zone adData:nil withViewController:_callbackDelegate];
+    [[MediaBrix sharedInstance] loadAdWithIdentifier:zone withViewController:_callbackDelegate];
 }
 
 -(void) showMediaBrixAd:(NSString *) zone rootView:(UIViewController *)rootViewController{
