@@ -3,13 +3,13 @@
 
 MediaBrix has created a MoPub adapter that allows publishers, using MoPub as their central ad server, to mediate the MediaBrix network as another demand source. This is done by setting up MediaBrix as a Custom Native Network in MoPub.
 
-##Prerequisites
+## Prerequisites
 * MediaBrix App_ID and Zone_Name(s)
 * MoPub SDK Integration
 * XCode 6 or greater
 * Supports iOS 7 and greater
 
-##Adapter Integration Steps
+## Adapter Integration Steps
 **Step 1:** Add the MediaBrix SDK to your project
 * Add the following files to your project ([which can be found here](https://github.com/mediabrix/mediabrix-ios-sdk/tree/master/IOS/src)):
  * MediaBrix.h
@@ -59,10 +59,10 @@ MediaBrix has created a MoPub adapter that allows publishers, using MoPub as the
 
 **Step 15:** Add other desired targeting and Save Order
 
-##Logging 
+## Logging 
 To disable logging from the MediaBrix SDK, set `MBEnableVerboseLogging` to `NO` in "MediaBrixInterstitialCustomEvent.m" or "MediaBrixRewardedVideo.m" 
 
-###Testing / Release Settings
+### Testing / Release Settings
 
 To facilitate integrations and QA around the globe, MediaBrix has deployed an open Base URL for all of our world wide network partners to use while testing the MediaBrix SDK. This Test Base URL will eliminate the need for proxying your device to the US and ensure your app receives 100% fill during testing.
 
